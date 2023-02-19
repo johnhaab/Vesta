@@ -1,0 +1,37 @@
+$main-color: #e7868e;
+$black: #171614;
+$grey: #363636;
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side-title {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        margin-bottom: 1rem;
+        color: $grey;
+    }
+    p {
+        font-weight: 500;
+    }
+}
+
+.play {
+    background-color: #e7868e4d;
+    border-radius: 3rem;
+    padding: .75rem;
+    display: flex;
+
+    cursor: pointer;
+}
+
+.play-btn {
+    font-size: 2.5rem;
+    color: $main-color;
+    text-align: center;
+}

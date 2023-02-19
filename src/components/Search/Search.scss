@@ -1,0 +1,35 @@
+$main-color: #e7868e;
+$black: #171614;
+$grey: #363636;
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+.search-input {
+    background-color: #3636362b;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    width: 40rem;
+    max-width: 20rem;
+
+    @media screen and (min-width: 768px) {
+        max-width: 40rem;
+    }
+    
+    &::placeholder {
+        color: #171614;
+        font-weight: 600;
+    }
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}

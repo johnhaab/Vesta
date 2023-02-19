@@ -1,0 +1,80 @@
+$main-color: #e7868e;
+$black: #171614;
+$grey: #363636;
+
+.color {
+    filter: invert(19%) sepia(0%) saturate(34%) hue-rotate(178deg) brightness(93%) contrast(88%);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 30rem;
+    margin-top: 5rem;
+
+    @media screen and (max-width: 768px) {
+        gap: 10rem;
+    }
+}
+
+.moon-outline {
+    cursor: pointer;
+    color: $grey;
+    font-size: 1rem;
+
+    transition: all 1s ease-in;
+    transition-timing-function: ease;
+}
+
+.moon {
+    cursor: pointer;
+    color: $main-color;
+    font-size: 1rem;
+
+    transition: all 1s ease-in;
+    transition-timing-function: ease;
+    transition-timing-function: ease-out;
+    transition: 0.2s;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1.5rem;
+
+    .font-selector {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.dash {
+    border-left: 2.5px solid #3636362f;
+    width: 2.5px;
+    height: 1.5rem;
+    background-color: #36363641;
+}
+
+.logo {
+    font-size: 1.75rem;
+}
+
+.font-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .drop-down {
+        padding-left: .25rem;
+        font-size: 1.75rem;
+        color: $main-color;
+
+        cursor: pointer;
+    }
+
+}
