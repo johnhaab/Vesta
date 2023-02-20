@@ -2,11 +2,11 @@ import React from "react";
 
 import "./Search.scss";
 
-const Search = ({ fetchData, onInputChange }) => {
+const Search = ({ fetchData, onInputChange, validateInput }) => {
   const handleKeyDown = (e) => {
     if (e.keyCode === 13) {
       e.preventDefault();
-      fetchData();
+      validateInput();
     }
   };
 
