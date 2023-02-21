@@ -2,23 +2,21 @@ $main-color: #e7868e;
 $black: #171614;
 $grey: #363636;
 
-.color {
-    filter: invert(19%) sepia(0%) saturate(34%) hue-rotate(178deg) brightness(93%) contrast(88%);
-}
-
-.nav {
+.container-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    
-    width: 70vh;
-    margin-top: 5rem;
+    justify-content: space-between;
+
+    // width: 52.5vw;
+    width: 70vw;
+
+    margin-top: 4.5rem;
 
     @media screen and (max-width: 768px) {
         width: 100vw;
         padding-left: 2rem;
         padding-right: 2rem;
-    }
+      }
 }
 
 .moon-outline {

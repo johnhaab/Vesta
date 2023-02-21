@@ -31,30 +31,28 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="nav">
-          <BsBook className="logo" />
-          <div className="left-side">
-            <div className="font-selector">
-              <p>Serif</p>
-              <BiChevronDown className="drop-down" />
-            </div>
-            <div className="dash"></div>
-            <div
-              className="dark-mode"
-              onMouseEnter={this.onMouseEnterHandler}
-              onMouseLeave={this.onMouseLeaveHandler}
-            >
-              {this.state.isHover ? (
-                <div>
-                  <BsFillMoonFill className="moon" />
-                </div>
-              ) : (
-                <div>
-                  <BsMoon className="moon-outline" />
-                </div>
-              )}
-            </div>
+      <div className="container-nav">
+        <BsBook className="logo" />
+        <div className="left-side">
+          <div className="font-selector">
+            <p>Serif</p>
+            <BiChevronDown className="drop-down" />
+          </div>
+          <div className="dash"></div>
+          <div
+            className="dark-mode"
+            onMouseEnter={this.onMouseEnterHandler}
+            onMouseLeave={this.onMouseLeaveHandler}
+          >
+            {this.state.isHover ? (
+              <div>
+                <BsFillMoonFill className="moon" />
+              </div>
+            ) : (
+              <div>
+                <BsMoon className="moon-outline" />
+              </div>
+            )}
           </div>
         </div>
       </div>

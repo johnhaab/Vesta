@@ -6,7 +6,6 @@ import Body from "./components/Body/Body";
 import axios from "axios";
 
 import Alert from "@mui/material/Alert";
-import Fade from "@mui/material/Fade";
 import Stack from "@mui/material/Stack";
 
 class App extends Component {
@@ -23,6 +22,7 @@ class App extends Component {
   }
 
   fetchData() {
+    this.setState({ isLoaded: false });
     axios
       .get(
         `https://api.dictionaryapi.dev/api/v2/entries/en/` + this.state.input
@@ -44,6 +44,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    this.setState({ isLoaded: false });
     axios
       .get(`https://api.dictionaryapi.dev/api/v2/entries/en/dictionary`)
       .then((res) => {

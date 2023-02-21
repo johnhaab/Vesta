@@ -10,10 +10,6 @@ $s: sans-serif;
 $a: 'Satisfy', cursive;
 
 .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     margin-top: 2rem;
 }
 
@@ -23,7 +19,7 @@ $a: 'Satisfy', cursive;
     padding: 1rem;
     border-radius: 1rem;
 
-    width: 70vh;
+    width: 70vw;
 
     // @media screen and (min-width: 768px) {
     //     max-width: 40rem;

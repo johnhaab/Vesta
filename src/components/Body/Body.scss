@@ -14,9 +14,9 @@ $a: 'Satisfy', cursive;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70vh;
+    width: 70vw;
 
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     @media screen and (max-width: 768px) {
         width: 100vw;
@@ -45,14 +45,15 @@ $a: 'Satisfy', cursive;
     display: flex;
 
     cursor: pointer;
-}
 
-.play-btn {
-    font-size: 2.5rem;
-    color: $main-color;
-    text-align: center;
+    .play-btn {
+        font-size: 2.5rem;
+        color: $main-color;
+        text-align: center;
+    
+        transform: translate(.2rem);
+    }
 }
-
 
 .noun {
     margin-top: 2rem;
@@ -75,6 +76,117 @@ $a: 'Satisfy', cursive;
     @media screen and (max-width: 768px) {
         width: 100vw;
         padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.verb {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    
+    p {
+        font-family: $a !important;
+        font-size: 1.55rem;
+        color: $grey;
+    }
+
+    div {
+        width: 100%;
+        height: 2px;
+        background-color: #3636362c;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.meanings {
+    margin-top: 1.25rem;
+    width: 70vw;
+
+    .meanings-title {
+        margin-bottom: 1rem;
+        color: #363636b4;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+ul {
+    width: 70vw;
+    list-style-type: disc;
+
+    padding-left: 2.5rem;
+
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+  }
+
+li {
+    @media screen and (max-width: 450px) {
+        width: 75vw;
+    }
+}
+
+.source {
+    width: 70vw;
+    .line-source {
+        margin-top: 2rem;
+        width: 100%;
+        height: 2px;
+        background-color: #3636362c;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.wrapper-source {
+    width: 70vw;
+    margin-top: 1.25rem;
+    display: flex;
+    gap: .75rem;
+
+    align-items: center;
+
+    color: #363636b4;
+
+    a {
+        text-decoration: underline;
+        color: $main-color;
+
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        padding-right: 2rem;
+
+    }
+}
+
+.wrapper-source-2 {
+    width: 70vw;
+    display: flex;
+    gap: .75rem;
+
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        width: 100vw;
         padding-right: 2rem;
     }
 }
