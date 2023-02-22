@@ -19,7 +19,7 @@
     Welcome to Vesta, the ultimate online dictionary for all your language needs. Our web app is designed using the latest technologies such as ReactJS, Axios, Sass, Material UI, and Framer-Motion to provide you with a sleek and modern user interface. Whether you're a student, a professional, or just someone who loves words, Vesta is the perfect tool for you. With its advanced search capabilities, you can easily find the meaning of any word, anytime, anywhere. So why wait? Start exploring the world of language with Vesta today!
     <br />
     <br />
-    <a href="https://johnhaab.github.io/vesta/">View Demo</a>
+    <a href="https://adorable-queijadas-105dcd.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/johnhaab/vesta">Report Bug</a>
     ·
@@ -78,8 +78,7 @@ With the power of the latest technologies, Vesta Dictionary delivers fast and ac
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Use a better & faster API with newer anime as Kitsu has older anime.
-- [ ] Post the animes to Social Media etc.
+- [ ] Ability to post the words to Social Media etc.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
