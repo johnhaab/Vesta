@@ -16,6 +16,10 @@ $a: 'Satisfy', cursive;
 
     margin-top: 2rem;
 
+    @media screen and (min-width: 768px) {
+        margin-top: 7rem;
+      }
+
     @media screen and (max-width: 768px) {
         width: 100vw;
         padding-left: 2rem;
