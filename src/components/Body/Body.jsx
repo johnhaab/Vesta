@@ -54,7 +54,7 @@ const Body = ({ info }) => {
       </div>
       <div className="meanings">
         <p className="meanings-title" style={{ color: "var(--theme-color-2)" }}>
-          Meaning(s):
+          Meaning
         </p>
         {info.meanings[0] &&
           info.meanings[0].definitions &&
@@ -79,6 +79,10 @@ const Body = ({ info }) => {
               </motion.div>
             </div>
           )}
+        <div className="syn">
+          <p>Synonym</p>
+          <span>{info.meanings[0].synonyms[0]}</span>
+        </div>
       </div>
       {info.meanings[1] &&
         info.meanings[1].definitions &&
@@ -93,7 +97,7 @@ const Body = ({ info }) => {
                 className="meanings-title"
                 style={{ color: "var(--theme-color-2)" }}
               >
-                Meaning(s):
+                Meaning
               </p>
               <motion.div
                 className="my-list"

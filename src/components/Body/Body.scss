@@ -199,3 +199,19 @@ li {
         padding-right: 3.2rem;
     }
 }
+
+.syn {
+    margin-top: 2rem;
+
+    display: flex;
+
+    p {
+        padding-right: 1rem;
+    }
+
+    span {
+        color: $main-color;
+        font-size: 1.25rem;
+        transform: translate(0rem, -0.25rem);
+    }
+}

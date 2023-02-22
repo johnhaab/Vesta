@@ -30,7 +30,7 @@ $a: 'Satisfy', cursive;
 }
 
 .mt {
-  transform: translate(0, 1.4rem);
+  transform: translate(0, 2.5rem);
   width: 70vw !important;
 
   @media screen and (max-width: 768px) {
@@ -45,6 +45,4 @@ $a: 'Satisfy', cursive;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  overflow-x: visible;
 }

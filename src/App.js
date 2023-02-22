@@ -92,7 +92,6 @@ class App extends Component {
   };
 
   fetchData() {
-    console.log(this.state.theme.palette);
     this.setState({ isLoaded: false });
     axios
       .get(
@@ -115,7 +114,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log(this.state.theme);
     this.setState({ isLoaded: false });
     axios
       .get(`https://api.dictionaryapi.dev/api/v2/entries/en/dictionary`)
