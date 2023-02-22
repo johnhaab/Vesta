@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Search.scss";
+import { HiSearch } from "react-icons/hi";
 
 const Search = ({ fetchData, onInputChange, validateInput }) => {
   const handleKeyDown = (e) => {
@@ -8,6 +9,11 @@ const Search = ({ fetchData, onInputChange, validateInput }) => {
       e.preventDefault();
       validateInput();
     }
+  };
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    validateInput();
   };
 
   return (
@@ -19,8 +25,11 @@ const Search = ({ fetchData, onInputChange, validateInput }) => {
           onChange={onInputChange}
           onKeyDown={handleKeyDown}
           id="search"
-          placeholder="Type any word then press ENTER..."
+          placeholder="Type anything..."
         />
+        <button className="search-btn" onClick={handleClick}>
+          <HiSearch />
+        </button>
       </div>
     </div>
   );

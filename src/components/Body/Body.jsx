@@ -1,9 +1,13 @@
 import React from "react";
 
 import "./Body.scss";
+
 import { BsFillPlayFill } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
+
 import { motion } from "framer-motion";
+
+import { Tooltip } from "react-tooltip";
 
 const Body = ({ info }) => {
   const capitalizeFirstLetter = (string) => {
@@ -24,7 +28,10 @@ const Body = ({ info }) => {
     <div className="container-body">
       <div className="title">
         <div className="left-side-title">
-          <h1 className="header" style={{ fontSize: "3rem" }}>
+          <h1
+            className="header"
+            style={{ fontSize: "3rem", color: "var(--theme-color)" }}
+          >
             {capitalizeFirstLetter(info.word)}
           </h1>
           <p
@@ -42,16 +49,19 @@ const Body = ({ info }) => {
         </div>
       </div>
       <div className="noun">
-        <p>noun</p>
+        <p style={{ color: "var(--theme-color)" }}>noun</p>
         <div className="line"></div>
       </div>
       <div className="meanings">
-        <p className="meanings-title">Meaning(s):</p>
+        <p className="meanings-title" style={{ color: "var(--theme-color-2)" }}>
+          Meaning(s):
+        </p>
         {info.meanings[0] &&
           info.meanings[0].definitions &&
           info.meanings[0].definitions.length > 0 && (
             <div>
               <motion.div
+                className="my-list"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -75,12 +85,18 @@ const Body = ({ info }) => {
         info.meanings[1].definitions.length > 0 && (
           <div>
             <div className="verb">
-              <p>verb</p>
+              <p style={{ color: "var(--theme-color)" }}>verb</p>
               <div className="line"></div>
             </div>
             <div className="meanings">
-              <p className="meanings-title">Meaning(s):</p>
+              <p
+                className="meanings-title"
+                style={{ color: "var(--theme-color-2)" }}
+              >
+                Meaning(s):
+              </p>
               <motion.div
+                className="my-list"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -102,7 +118,6 @@ const Body = ({ info }) => {
       <div className="source">
         <div className="line-source"></div>
         <div className="wrapper-source">
-          <p>Source: </p>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -113,7 +128,14 @@ const Body = ({ info }) => {
               default: { ease: "linear" },
             }}
           >
-            <a href={info.sourceUrls[0]} className="wrapper-source-2">
+            <a
+              href={info.sourceUrls[0]}
+              className="wrapper-source-2"
+              data-tooltip-id="my-tooltip"
+              data-tooltip-content="This will bring you to the source of the info above."
+              data-tooltip-place="top"
+            >
+              <Tooltip id="my-tooltip" />
               {`${info.sourceUrls[0]}`}
               <BiLinkExternal className="link-icon" />
             </a>

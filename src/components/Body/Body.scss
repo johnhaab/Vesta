@@ -10,13 +10,17 @@ $m: 'Montserrat', sans-serif;
 $s: 'Labrada', serif;
 $a: 'Satisfy', cursive;
 
+.container-body {
+    overflow: hidden !important;
+}
+
 .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 70vw;
 
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 
     @media screen and (max-width: 768px) {
         width: 100vw;
@@ -51,13 +55,13 @@ $a: 'Satisfy', cursive;
         color: $main-color;
         text-align: center;
     
-        transform: translate(.2rem);
+        transform: translate(.1rem);
     }
 }
 
 .noun {
     margin-top: 2rem;
-    display: flex;
+    display: flex; 
     align-items: center;
     gap: 1.25rem;
     
@@ -122,8 +126,12 @@ $a: 'Satisfy', cursive;
 }
 
 ul {
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    overflow: visible !important;
+
     width: 70vw;
-    list-style-type: disc;
+    list-style-type: disc !important;
 
     padding-left: 2.5rem;
 
@@ -142,12 +150,14 @@ li {
 
 .source {
     width: 70vw;
+
     .line-source {
         margin-top: 2rem;
         width: 100%;
         height: 2px;
         background-color: #3636362c;
     }
+
     @media screen and (max-width: 768px) {
         width: 100vw;
         padding-left: 2rem;
@@ -158,10 +168,8 @@ li {
 .wrapper-source {
     width: 70vw;
     margin-top: 1.25rem;
-    display: flex;
+    margin-bottom: 1.25rem;
     gap: .75rem;
-
-    align-items: center;
 
     color: #363636b4;
 
@@ -173,7 +181,7 @@ li {
 
     @media screen and (max-width: 768px) {
         width: 100vw;
-        padding-right: 2rem;
+        padding-right: 3.2rem;
 
     }
 }
@@ -183,10 +191,11 @@ li {
     display: flex;
     gap: .75rem;
 
+    justify-content: center;
     align-items: center;
 
     @media screen and (max-width: 768px) {
         width: 100vw;
-        padding-right: 2rem;
+        padding-right: 3.2rem;
     }
 }

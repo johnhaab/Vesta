@@ -11,6 +11,16 @@ $a: 'Satisfy', cursive;
 
 .wrapper {
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    width: 70vw;
+    @media screen and (max-width: 768px) {
+        width: 90vw;
+    }
+    @media screen and (max-width: 450px) {
+        width: 86vw;
+    }
 }
 
 .search-input {
@@ -18,16 +28,15 @@ $a: 'Satisfy', cursive;
     border: none;
     padding: 1rem;
     border-radius: 1rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
 
     width: 70vw;
-
-    // @media screen and (min-width: 768px) {
-    //     max-width: 40rem;
-    // }
     
     &::placeholder {
-        color: #171614;
+        color: var(--search-bar-placeholder-color) !important;
         font-weight: 600;
+        color: #363636c2;
     }
 
     &:focus {
@@ -36,6 +45,17 @@ $a: 'Satisfy', cursive;
     }
 
     @media screen and (max-width: 768px) {
-        width: 90vw;
+        width: 100vw;
     }
+}
+
+.search-btn {
+    background-color: #3636362b;
+    padding: 1.1rem;
+    border-radius: 1rem;
+
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+
+    color: $main-color;
 }

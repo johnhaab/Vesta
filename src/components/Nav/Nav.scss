@@ -2,6 +2,10 @@ $main-color: #e7868e;
 $black: #171614;
 $grey: #363636;
 
+$m: 'Montserrat', sans-serif;
+$s: 'Labrada', serif;
+$a: 'Satisfy', cursive;
+
 .container-nav {
     display: flex;
     align-items: center;
@@ -10,7 +14,7 @@ $grey: #363636;
     // width: 52.5vw;
     width: 70vw;
 
-    margin-top: 4.5rem;
+    margin-top: 2rem;
 
     @media screen and (max-width: 768px) {
         width: 100vw;
@@ -37,6 +41,10 @@ $grey: #363636;
     transition-timing-function: ease;
     transition-timing-function: ease-out;
     transition: 0.2s;
+}
+
+.white-ol:hover {
+    color: #fff;
 }
 
 .left-side {
@@ -69,6 +77,10 @@ $grey: #363636;
     justify-content: center;
     align-items: center;
 
+    .font-selector-btn {
+        text-transform: capitalize;
+    }
+
     .drop-down {
         padding-left: .25rem;
         font-size: 1.75rem;
@@ -77,4 +89,12 @@ $grey: #363636;
         cursor: pointer;
     }
 
+}
+
+.font-btn {
+    background-color: transparent !important;
+
+    &:active {
+        background-color: transparent !important;
+    }
 }
