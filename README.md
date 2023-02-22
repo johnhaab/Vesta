@@ -53,7 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![product-screenshot](/public/screenshot.png)
+![product-screenshot](/public/screenshot1.png)
 
 Vesta is a user-friendly online dictionary application built with ReactJS, Axios, Sass, Material UI, and Framer-Motion. With a sleek and modern design, Vesta offers users a seamless experience to search and discover new words.
 
