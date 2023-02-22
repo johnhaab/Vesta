@@ -68,7 +68,7 @@ With the power of the latest technologies, Vesta Dictionary delivers fast and ac
 ### Built With
 
 * [![REACT][REACT-img]][REACT-url]
-* [![FRAMER][FRAMER-img]][JS-url]
+* [![FRAMER][FRAMER-img]][FRAMER-url]
 * [![MATERIAL UI][MUI-img]][MUI-url]
 * [![SASS][SASS-img]][SASS-url]
 
