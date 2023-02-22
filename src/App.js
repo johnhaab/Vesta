@@ -120,7 +120,7 @@ class App extends Component {
       .then((res) => {
         const info = res.data.shift();
         this.setState({ info: info });
-        console.log(info);
+        // console.log(info);
         this.setState({ isLoaded: true });
       });
   }
